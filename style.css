@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Open+Sans:wght@300&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sky {
+    overflow: hidden; /*prevent scrolling to sides*/
+    position: relative;/*all elements are sized relative to section, not browser height*/
+    background-image: linear-gradient(#f3badb,#f6d19c);
+    height: 80vh;
+    width: 100%;
+    display: flex; /*all imgs in center*/
+    justify-content: center;
+    /*need to give s position to all imgs as now they're all lin a row*/
+}
+
+.sky img {
+    position: absolute;
+    width: 100%;
+    bottom: 0; /*now all appear same width and space and overlap*/
+}
+
+#cloud-one {/*overrides width of .sky img as it's written below*/
+    width: 20%;
+    bottom: 40%;
+    margin-left: 80%;/*always use % for respoinsiveness relatie to browser size*/
+}
+
+#cloud-two {
+    width: 25%;
+    bottom: 80%;
+    margin-left: 60%;
+}
+
+#cloud-three {
+    width: 30%;
+    bottom: 60%;
+    margin-right: 80%;
+}
+#cloud-four {
+    width: 24%;
+    bottom: 70%;
+    margin-right: 40%;
+}
+#cloud-five {
+    width: 23%;
+    bottom: 60%;
+    margin-left: 40%;
+}
+
+#javascript {
+    width: 5%;
+    bottom: 30%;
+    margin-right: 55%;
+}
+
+#react {
+    width: 5%;
+    bottom: 30%;
+    margin-right: 43%;
+}
+
+#graphql {
+    width: 5%;
+    bottom: 30%;
+    margin-right: 31%;
+}
+
+#air-balloon {
+    width: 10%;
+    bottom: 10%;
+}
+
+.about-me {
+    overflow: hidden;
+    font-family: 'Cedarville cursive', 'poppins';
+    height: 600px;
+    background-image: linear-gradient(to bottom,#69d31d, #c3e4ac);
+    padding: 40px;
+    display: flex; /*initialises justify-content to middle*/
+    justify-content: center;
+}
+
+
+
+h1 {
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center; 
+  
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 20px 40px;
+   
+}
+
+@media (max-width: 918px) {
+    #air-balloon {
+        width: 25%;
+        bottom: 10%;
+    }
+    
+    
+}
